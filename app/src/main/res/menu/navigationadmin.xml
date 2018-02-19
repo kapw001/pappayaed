@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@mipmap/ic_state"
+        android:title="@string/title_state" />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@mipmap/ic_district"
+        android:title="@string/title_district" />
+
+    <item
+        android:id="@+id/more"
+        android:icon="@drawable/ic_more_horiz_black_24dp"
+        android:title="@string/title_more" />
+
+</menu>

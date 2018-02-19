@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="rajawali-1.0.325">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/c38c2c72679e4b7ed58d19d7d43860b903b33436/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/c38c2c72679e4b7ed58d19d7d43860b903b33436/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.rajawali3d/rajawali/1.0.325/c6765be281fd67b754ba01292f0b8047a2252dfb/rajawali-1.0.325-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/rdogrp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/btn1"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:background="@drawable/btnradioselector"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:padding="@dimen/_10ssp"
+            android:singleLine="true"
+            android:text="Budget"
+            android:textAllCaps="true"
+            android:textColor="@drawable/textselector" />
+
+        <RadioButton
+            android:id="@+id/btn2"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:background="@drawable/btnradioselector"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:padding="@dimen/_10ssp"
+            android:singleLine="true"
+            android:text="Expense"
+            android:textAllCaps="true"
+            android:textColor="@drawable/textselector" />
+
+    </RadioGroup>
+
+
+</FrameLayout>

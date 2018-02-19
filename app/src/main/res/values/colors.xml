@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#4CAF50</color>
+    <color name="colorPrimaryDark">#388E3C</color>
+    <color name="colorAccent">#FF5722</color>
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <!--<color name="colorPrimaryDark">#303F9F</color>-->
+    <!--<color name="colorAccent">#FF4081</color>-->
+    <!--<color name="colorPrimary">#aa3939</color>-->
+    <!--<color name="colorPrimaryDark">#0000</color>-->
+    <!--<color name="colorAccent">#FF4081</color>-->
+    <color name="white">#FFFFFF</color>
+    <color name="background">#f9f9f9</color>
+    <color name="btncolor">#555555</color>
+    <color name="btncolorselected">#888888</color>
+    <color name="black">#000000</color>
+    <color name="line">#EBEBEB</color>
+    <color name="line2">#d3d3d3</color>
+    <color name="textplaceholdercolor">#EBEBEB</color>
+    <color name="textcolor">#000000</color>
+    <color name="txt">#545454</color>
+    <color name="tabcolor">#7c7cd1</color>
+    <color name="black_overlay">#66000000</color>
+
+
+    <color name="dark_grey">#424242</color>
+    <color name="medium_grey">#9E9E9E</color>
+    <color name="button_grey">#757575</color>
+    <color name="textLight">#555</color>
+    <color name="textDark">#222</color>
+    <!--//piechart-->
+    <color name="seafoam">#ffc6f9e5</color>
+    <color name="chartreuse">#ffb6e9b5</color>
+    <color name="emerald">#ffa6d9b5</color>
+    <color name="bluegrass">#ff96c9b5</color>
+    <color name="turquoise">#ff86b9b5</color>
+    <color name="slate">#ff76a9b5</color>
+
+    <color name="rowcolor">#FEFEFE</color>
+    <color name="rowbuttonstatscolor">#F7F7F7</color>
+
+    <color name="reject">#FA3D2D</color>
+</resources>

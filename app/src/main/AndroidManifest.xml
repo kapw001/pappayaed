@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pappayaed">
+    <!--
+ The video API works on Daydream-ready devices with Asynchronous
+        Reprojection on Android N+ and OpenGL ES 2+..
+    -->
+    <uses-sdk
+        android:minSdkVersion="24"
+        android:targetSdkVersion="24" />
+
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <!-- Make accelerometer and gyroscope hard requirements for good head tracking. -->
+    <uses-feature
+        android:name="android.hardware.sensor.accelerometer"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.sensor.gyroscope"
+        android:required="true" />
+
+    <!-- Indicates use of Android's VR-mode, available only on Android N+. -->
+    <uses-feature
+        android:name="android.software.vr.mode"
+        android:required="true" />
+    <!-- Indicates use of VR features that are available only on Daydream-ready devices. -->
+    <uses-feature
+        android:name="android.hardware.vr.high_performance"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- <uses-permission android:name="android.permission.READ_PHONE_STATE" /> -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- <uses-permission android:name="android.permission.READ_PHONE_STATE" /> -->
+    <application
+        android:name=".App.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".login.LoginActivity"
+            android:label="@string/login"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".BookingTimeActivity"
+            android:screenOrientation="portrait">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".GetScollId.SchoolIdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Main.MainActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".splash.FullscreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="pappayaed" />
+                <!-- <data -->
+                <!-- android:host="example.com" -->
+                <!-- android:pathPrefix="/" -->
+                <!-- android:scheme="http" /> -->
+            </intent-filter>
+            <!-- &lt;!&ndash; Accept adb data flag &ndash;&gt; -->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.VIEW" /> -->
+
+
+            <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+            <!-- <category android:name="android.intent.category.BROWSABLE" /> -->
+
+
+            <!-- <data -->
+            <!-- android:host="example.com" -->
+            <!-- android:scheme="http" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".GetScollId.ItemListActivity"
+            android:label="@string/title_item_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GetScollId.ItemDetailActivity"
+            android:label="@string/title_item_detail"
+            android:parentActivityName=".GetScollId.ItemListActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pappayaed.GetScollId.ItemListActivity" />
+        </activity>
+        <activity
+            android:name=".gener.Main2Activity"
+            android:screenOrientation="portrait" />
+
+        <!-- This demo is singleTask since it makes launching via custom adb intents easier. -->
+        <activity
+            android:name=".Main.watch.SimpleVrVideoActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <category android:name="com.google.intent.category.DAYDREAM" />
+                <category android:name="com.google.intent.category.CARDBOARD" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".showprofile.ProfileActivity"
+            android:label="@string/profile"
+            android:parentActivityName=".showprofile.StudentProfileViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".showprofile.StudentProfileViewActivity" />
+        </activity>
+        <activity
+            android:name=".EncriptyActivity"
+            android:screenOrientation="portrait">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".test.TestActivity"
+            android:label="@string/title_activity_test"
+            android:screenOrientation="portrait">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".showprofile.StudentProfileViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="example.android.customviews.MainActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".testrecyclerview.RecyclerActivity"
+            android:screenOrientation="portrait">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".Main.showassignmentprofile.AssignmentProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Main.showassignmentprofile.TimetableDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".load.LoadActivity" />
+        <activity
+            android:name=".detail.DetailActivity"
+            android:label="@string/title_activity_detail"
+            android:screenOrientation="portrait">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".detail.WebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Main.leave.LeaveActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEdit" />
+        <activity
+            android:name=".Main.leave.ParentLeaveActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeEdit" />
+        <activity
+            android:name=".Main.examp.ExamActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Main.examp.ExamMarkSheetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Main.examp.ExamMarkSheetSubjectListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Main.showassignmentprofile.AttachmentListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Main.timetable.TimetableActivity"
+            android:screenOrientation="portrait">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <!-- <activity android:name=".Main.webview.WebviewActivity" /> -->
+        <activity android:name=".Main.timetable.TimeTableFilterActivity" />
+        <activity android:name=".Main.vr.VrActivity" />
+        <activity android:name=".SMSReadActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.VIEW" /> -->
+
+
+            <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+            <!-- <category android:name="android.intent.category.BROWSABLE" /> -->
+
+
+            <!-- <data -->
+            <!-- android:host="example.com" -->
+            <!-- android:pathPrefix="/" -->
+            <!-- android:scheme="http" /> -->
+            <!-- </intent-filter> -->
+            <!-- &lt;!&ndash; Accept adb data flag &ndash;&gt; -->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.VIEW" /> -->
+
+
+            <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+            <!-- <category android:name="android.intent.category.BROWSABLE" /> -->
+
+
+            <!-- <data -->
+            <!-- android:host="example.com" -->
+            <!-- android:scheme="http" /> -->
+            <!-- </intent-filter> -->
+
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.VIEW" /> -->
+
+
+            <!-- &lt;!&ndash;<action android:name="android.intent.action.MAIN" />&ndash;&gt; -->
+
+
+            <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+            <!-- <category android:name="android.intent.category.BROWSABLE" /> -->
+            <!-- &lt;!&ndash; Accepts URIs that begin with "http://www.example.com/gizmos” &ndash;&gt; -->
+            <!-- <data -->
+            <!-- android:host="www.example.com" -->
+            <!-- android:scheme="https" /> -->
+            <!-- <data -->
+            <!-- android:host="www.example.com" -->
+            <!-- android:scheme="http" /> -->
+            <!-- <data -->
+            <!-- android:host="open.my.app" -->
+            <!-- android:scheme="app" /> -->
+
+
+            <!-- <data -->
+            <!-- android:host="www.example.com" -->
+            <!-- android:pathPrefix="/gizmos" -->
+            <!-- android:scheme="http" /> -->
+
+
+            <!-- </intent-filter> -->
+
+        </activity>
+        <activity android:name=".Main.MyAppSettingsActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.pappayaed.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name=".demoadmin.AdminActivity"
+            android:label="@string/app_dash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".pricepaldemo.PrincipalActivity"
+            android:label="@string/app_dash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TestActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ResultActivity"></activity>
+    </application>
+
+</manifest>

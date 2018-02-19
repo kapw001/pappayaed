@@ -1,0 +1,35 @@
+{   "state_detail" : {
+    "totalPopulation" : 12548926,
+    "malePopulation" :6768890,
+    "femalePopulation" : 5780036,
+    "malePopulationPercent" :53.94,
+    "femalePopulationPercent" : 46.96,
+    "maleLiteracy": 78.26,
+    "femaleLiteracy":58.01,
+    "totalLiteracy":68.74
+    },
+    "district_list" : [
+                       {"name":"Jammu","male":89.77 ,"female":77.41 ,"overall":83.98 },
+                       {"name":"Srinagar" ,"male":78.01 ,"female":63.47 ,"overall":71.21 },
+                       {"name":"Rajouri" ,"male":78.38 ,"female":57.20 ,"overall":68.54 },
+                       {"name":"Ganderbal" ,"male":70.74 ,"female":47.62 ,"overall":59.99 },
+                       {"name":"Doda" ,"male":80.36 ,"female":50.34 ,"overall":65.97 },
+                       {"name":"Kargil" ,"male":86.73 ,"female":58.05 ,"overall":74.49 },
+                       {"name":"Poonch" ,"male":81.04 ,"female":54.80 ,"overall":68.69 },
+                       {"name":"Leh" ,"male":89.39 ,"female":64.52 ,"overall":80.48 },
+                       {"name":"Kathua" ,"male":81.40 ,"female":64.56 ,"overall":73.50 },
+                       {"name":"Baramulla" ,"male":77.35 ,"female":55.01 ,"overall":66.93 },
+                       {"name":"Samba" ,"male":89.76 ,"female":74.39 ,"overall":82.48 },
+                       {"name":"Budgam" ,"male":68.18 ,"female":46.60 ,"overall":57.98 },
+                       {"name":"Kishtwar" ,"male":71.75 ,"female":44.13 ,"overall":58.54 },
+                       {"name":"Kupwara" ,"male":77.10 ,"female":54.79,"overall":66.92 },
+                       {"name":"Udhampur" ,"male":79.93 ,"female":58.22,"overall":69.90 },
+                       {"name":"Anantnag" ,"male": 74.13,"female":54.15 ,"overall":64.32 },
+                       {"name":"Shopian","male":71.86 ,"female":52.77 ,"overall":62.49 },
+                       {"name":"Reasi","male":69.93 ,"female":47.55,"overall":59.42 },
+                       {"name":"Ramban" ,"male":71.97 ,"female":40.04 ,"overall":56.90 },
+                       {"name":"Bandipora" ,"male":68.41 ,"female":46.24 ,"overall":57.82 },
+                       {"name":"Pulwama" ,"male":75.41 ,"female":53.81 ,"overall":65.00 },
+                       {"name":"Kulgam" ,"male":70.59 ,"female":49.74 ,"overall":60.35 }
+                       ]
+}
